@@ -1,0 +1,29 @@
+.main-section-access {
+    background-color: $primaryDesaturatedBlue1;
+}
+
+.section-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: calc($paddingMain + calc($paddingMain / 10));
+    color: $neutralLightGrayishBlue;
+
+    article {
+        width: 100%;
+    }
+
+    article>* {
+        margin-top: 10px;
+    }
+
+    article:last-child form {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

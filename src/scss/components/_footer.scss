@@ -1,0 +1,42 @@
+// Css para el footer
+.main-section-footer {
+    background-color: $primaryVeryDarkBlue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    line-height: 2;
+
+    article:last-child {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 25px;
+        }
+
+        div:last-child {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+    
+            svg {
+                width: 30px;
+                fill: white;
+            }
+        }
+    }
+
+
+}

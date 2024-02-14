@@ -1,0 +1,71 @@
+// Css for section 2
+
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    * {
+        margin: 5px 0;
+    }
+
+    article:first-child img {
+        width: 100%;
+    }
+
+    article:last-child {
+        
+        h1 {
+            font-size: calc($fontSizeH1 / 2);
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: $primaryDesaturatedBlue;
+        }
+
+        span {
+            display: flex;
+            gap: 10px;
+            color: $accentModerateCyan;
+            font-size: 0.8rem;
+            text-decoration: underline;
+            align-items: center;
+            padding-bottom: 3px;
+        }
+    }
+}
+
+// Card 
+
+.card-section2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px $primaryDesaturatedBlue;
+    border-radius: 7px;
+
+    .data-person {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: $widthImgPerson;
+            border-radius: 50%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+
+            * {
+                margin: 1px 0;
+            }
+        }
+    }
+}

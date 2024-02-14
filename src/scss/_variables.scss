@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Tamaño de pantallas
+$widthMobile: 375px;
+$widthDesktop: 1440px;
+
+//  Colors
+$primaryVeryDarkBlue: hsl(243, 87%, 12%);
+$primaryDesaturatedBlue: hsl(238, 22%, 44%);
+$primaryDesaturatedBlue1: hsl(238, 24%, 46%);
+$accentBrightBlue: hsl(224, 93%, 58%);
+$accentModerateCyan: hsl(170, 45%, 43%);
+$neutralLightGrayishBlue: hsl(240, 75%, 98%);
+$neutralLightGray: hsl(0, 0%, 75%);
+
+//  Typography
+$fontSizeParagraph: 16px;
+$fontFamilyOpenSans: "Open Sans", sans-serif;
+$fontFamilyRaleway: "Raleway", sans-serif;
+
+// Main
+$paddingMain: 20px;
+
+//Sections
+$fontSizeH1: 2.8rem;
+$widthImgPerson: 50px;
+
+// Inputs
+$paddingInputs: 10px 10px;
+

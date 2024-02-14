@@ -1,0 +1,30 @@
+// Css para el Header
+header {
+    // background-color: $tempColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img, li {
+        cursor: pointer;
+    }
+
+    div {
+        max-width: 30%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    ul {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            color: $primaryDesaturatedBlue;
+            padding-left: 20px;
+        }
+    }
+}

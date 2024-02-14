@@ -1,0 +1,49 @@
+@import './variables';
+@import './components/header';
+@import './components/section1';
+@import './components/section2';
+@import './components/sectionaccess';
+@import './components/footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: $fontSizeH1;
+    color: $primaryVeryDarkBlue;
+}
+
+input {
+    padding: $paddingInputs;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    border: 1px solid $primaryDesaturatedBlue;
+}
+
+input[type="submit"] {
+    border: none;
+    background-color: $accentBrightBlue;
+    color: $neutralLightGrayishBlue;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    // padding: $paddingMain;
+
+    .main-div {
+        padding: $paddingMain;
+    }
+}
+
