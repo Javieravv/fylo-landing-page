@@ -1,37 +1,92 @@
 // Css for section 2
 
 .section2 {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    * {
-        margin: 5px 0;
-    }
+    gap: 10px;
+    padding: $paddingMain 0;
 
     article:first-child img {
         width: 100%;
     }
 
     article:last-child {
-        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
         h1 {
-            font-size: calc($fontSizeH1 / 2);
+            font-size: calc($fontSizeH1 - 0.9rem);
             text-align: center;
         }
 
-        p {
-            font-size: 0.8rem;
+        .paragraph-section2 {
+            font-size: 0.9rem;
             color: $primaryDesaturatedBlue;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .div-arrow {
+            border-bottom: 1px $accentModerateCyan solid;
+            align-self: center;
         }
 
         span {
             display: flex;
-            gap: 10px;
+            gap: 5px;
             color: $accentModerateCyan;
             font-size: 0.8rem;
-            text-decoration: underline;
             align-items: center;
-            padding-bottom: 3px;
+        }
+    }
+
+    // Media queries
+    @media (width > $widthMobile) {
+        min-height: 450px;
+        // border: 2px solid rgb(54, 46, 76);
+        flex-direction: row;
+        // gap: 10px;
+
+        article:first-child {
+            order: 2;
+            max-width: 50%;
+        }
+
+        article:first-child img {
+            width: 100%;
+        }
+
+        article:last-child {
+            order: 1;
+            gap: 20px;
+            align-items: flex-start;
+
+            h1 {
+                font-size: calc($fontSizeH1 - 0.5rem);
+                text-align: center;
+            }
+
+            .paragraph-section2 {
+                color: $primaryDesaturatedBlue;
+                font-weight: normal;
+                line-height: 1.5;
+                font-weight: bold;
+                font-size: calc($fontSizeParagraph + 0rem);
+            }
+
+            .div-arrow {
+                border-bottom: 1px $accentModerateCyan solid;
+                align-self: flex-start;
+            }
+
+            span {
+                display: flex;
+                gap: 8px;
+                color: $accentModerateCyan;
+                font-size: 1rem;
+                align-items: center;
+            }
         }
     }
 }
@@ -39,19 +94,27 @@
 // Card 
 
 .card-section2 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: $paddingMain;
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: 5px 5px 5px 5px $primaryDesaturatedBlue;
     border-radius: 7px;
+    gap: 15px;
+
+    .paragraph-card {
+        font-size: calc($fontSizeParagraph - 0.2rem);
+        font-family: $fontFamilyOpenSans;
+        color: $primaryDesaturatedBlue;
+        line-height: 2;
+    }
 
     .data-person {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
 
         img {
             width: $widthImgPerson;
@@ -63,9 +126,42 @@
             flex-direction: column;
             justify-content: stretch;
 
-            * {
-                margin: 1px 0;
+            p {
+                font-size: calc($fontSizeParagraph - 0.25rem);
+            }
+
+            p:first-child {
+                font-weight: bolder;
             }
         }
+    }
+
+    @media (width > $widthMobile) {
+        width: 80%;
+        margin: 20px 0;
+        gap: 5px;
+
+        .paragraph-card {
+            font-size: calc($fontSizeParagraph - 0.3rem);
+        }
+
+        .data-person {
+            // gap: 15px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+
+                p {
+                    font-size: calc($fontSizeParagraph - 0.35rem);
+
+                }
+            }
+        }
+    }
+
+    @media (width > calc($widthMobile + 400px)) {
+        width: 60%;
     }
 }

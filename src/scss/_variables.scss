@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Tamaño de pantallas
-$widthMobile: 375px;
+$widthMobile: 600px;
 $widthDesktop: 1440px;
+$widthSections: 90%;
 
 //  Colors
 $primaryVeryDarkBlue: hsl(243, 87%, 12%);
@@ -23,7 +24,7 @@ $fontFamilyRaleway: "Raleway", sans-serif;
 $paddingMain: 20px;
 
 //Sections
-$fontSizeH1: 2.8rem;
+$fontSizeH1: 2rem;
 $widthImgPerson: 50px;
 
 // Inputs

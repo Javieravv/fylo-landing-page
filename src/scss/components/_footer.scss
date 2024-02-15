@@ -4,19 +4,45 @@
 }
 
 .footer {
+    width: $widthSections;
     display: flex;
     flex-direction: column;
     color: white;
     font-weight: bolder;
     font-size: 1.2rem;
     line-height: 2;
+    padding: calc($paddingMain * 2) $paddingMain;
+
 
     article:last-child {
         display: flex;
         flex-direction: column;
 
         div {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+        }
+
+        div:first-child ul li {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            svg {
+                width: 20px;
+                &:hover {
+                    fill: $primaryDesaturatedBlue;
+                }
+            }
+        }
+
+        div ul {
+            li {
+                cursor: pointer;
+
+                &:hover {
+                    color: $primaryDesaturatedBlue;
+                }
+            }
         }
 
         div:last-child {
@@ -24,19 +50,50 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 20px;
-
-                li {
-                    cursor: pointer;
-                }
+                gap: 30px;
             }
-    
+
             svg {
                 width: 30px;
                 fill: white;
+
+                &:hover {
+                    fill: $primaryDesaturatedBlue;
+                }
             }
         }
     }
 
+    // Media queries
+    @media (width > $widthMobile) {
+        font-size: 1rem;
+        line-height: 2;
+
+        article:last-child {
+            // border: 2px solid orangered;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: calc($fontSizeParagraph - 0.3rem);
+
+            div {
+                margin-bottom: 20px;
+                width: 25%;
+            }
+
+            div:last-child {
+                ul {
+                     flex-direction: row;
+                    justify-content: start;
+                    // gap: 5px;
+                }
+
+                svg {
+                    width: 20px;
+                    // fill: white;
+                }
+            }
+        }
+    }
 
 }

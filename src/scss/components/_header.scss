@@ -1,9 +1,12 @@
 // Css para el Header
 header {
     // background-color: $tempColor;
+    // width: $widthSections;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: $fontFamilyRaleway;
+    padding-top: $paddingMain;
     
     img, li {
         cursor: pointer;
@@ -12,8 +15,10 @@ header {
     div {
         max-width: 30%;
 
-        img {
+        img, svg {
             width: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
     }
 
@@ -26,5 +31,10 @@ header {
             color: $primaryDesaturatedBlue;
             padding-left: 20px;
         }
+    }
+
+    @media (width > $widthMobile) {
+        
+        // margin: 0 auto;
     }
 }

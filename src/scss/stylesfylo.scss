@@ -11,11 +11,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $fontFamilyOpenSans;
+}
+
 ul {
     list-style: none;
+
+    li {
+        font-family: $fontFamilyRaleway;
+    }
 }
 
 h1 {
+    font-family: $fontFamilyRaleway;
     font-size: $fontSizeH1;
     color: $primaryVeryDarkBlue;
 }
@@ -35,15 +44,60 @@ input[type="submit"] {
     color: $neutralLightGrayishBlue;
     font-weight: bolder;
     cursor: pointer;
+
+    &:hover {
+        background-color: hsla(217, 84%, 60%, 0.877)
+    }
+}
+
+p {
+    font-family: $fontFamilyOpenSans;
+}
+
+.message-email {
+    font-size: calc($fontSizeParagraph - 0.3rem) !important;
+    font-weight: normal !important;
+    margin: calc($paddingMain - calc($paddingMain * 1.8)) 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
 }
 
 main {
     display: flex;
     flex-direction: column;
+
     // padding: $paddingMain;
 
     .main-div {
-        padding: $paddingMain;
+        // padding: $paddingMain;
+        // width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
+    .main-div>*:first-child {
+        width: $widthSections;
+    }
+
+    @media (width > $widthMobile) {
+        .main-div>*:first-child {
+            // border: 2px rgba(17, 70, 40, 0.717) solid;
+        }
+    }
+
+    @media (width > calc($widthMobile + 200px)) {
+        .main-div>*:first-child {
+            // border: 2px rgb(0, 3, 186) solid;
+            width: 90%;
+        }
+    }
+
+    @media (width > calc($widthMobile + 400px)) {
+        .main-div>*:first-child {
+            // border: 2px rgb(179, 10, 75) solid;
+            width: 80%;
+        }
+    }
+
+}

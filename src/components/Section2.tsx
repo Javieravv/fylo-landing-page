@@ -6,10 +6,12 @@ import imagePerson from '../../public/images/avatar-testimonial.jpg';
 export const CardSection2 = () => {
     return (
         <div className='card-section2'>
-            <p>
-                <span><img src={imageQuotes} alt="" /></span>
-                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-            </p>
+            <div>
+                <p className='paragraph-card'>
+                    <span><img src={imageQuotes} alt="" /></span>
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                </p>
+            </div>
             <div className='data-person'>
                 <img src={imagePerson} alt="" />
                 <div>
@@ -31,14 +33,16 @@ export const Section2 = () => {
                 </article>
                 <article>
                     <h1>Stay productive, wherever you are</h1>
-                    <p>Never let location be an issue when accessing your files. Fylo has you
+                    <p className='paragraph-section2'>Never let location be an issue when accessing your files. Fylo has you
                         covered for all of your file storage needs.</p>
-                    <p>Securely share files and folders with friends, family and colleagues for
+                    <p className='paragraph-section2'>Securely share files and folders with friends, family and colleagues for
                         live collaboration. No email attachments required!</p>
-                    <span>
-                        See how Fylo works
-                        <img src={imageArrow} alt="" />
-                    </span>
+                    <div className='div-arrow'>
+                        <span>
+                            See how Fylo works
+                            <img src={imageArrow} alt="" />
+                        </span>
+                    </div>
                     <CardSection2 />
                 </article>
             </section>
