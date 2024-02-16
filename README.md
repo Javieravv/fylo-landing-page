@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Fylo landing page with two column layout
 
 Solución a reto de FronteMenor.io.
 
