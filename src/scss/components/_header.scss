@@ -7,19 +7,19 @@ header {
     align-items: center;
     font-family: $fontFamilyRaleway;
     padding-top: $paddingMain;
-    
-    img, li {
-        cursor: pointer;
-    }
 
-    div {
+    .div-logo {
         max-width: 30%;
 
         img, svg {
             width: 100%;
-            object-fit: cover;
-            object-position: center center;
+            // object-fit: cover;
+            // object-position: center center;
         }
+    }
+    
+    img, li {
+        cursor: pointer;
     }
 
     ul {

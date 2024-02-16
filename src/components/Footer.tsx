@@ -1,4 +1,4 @@
-import imageLogo from '../../public/images/logo.svg';
+// import imageLogo from '../../public/images/logo.svg';
 import { Logofylo } from './Logofylo';
 
 export const Footer = () => {
