@@ -32,7 +32,7 @@ export const Section2 = () => {
                     <img src={imageLogo} alt="" />
                 </article>
                 <article>
-                    <h1>Stay productive, wherever you are</h1>
+                    <h2>Stay productive, wherever you are</h2>
                     <p className='paragraph-section2'>Never let location be an issue when accessing your files. Fylo has you
                         covered for all of your file storage needs.</p>
                     <p className='paragraph-section2'>Securely share files and folders with friends, family and colleagues for
